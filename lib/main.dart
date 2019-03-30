@@ -18,56 +18,57 @@ class MyApp extends StatelessWidget {
           title: Text('Flutter Demo Card'),
         ),
         body: Material(
-            color: Colors.grey[200],
-            child: MyHomePage(
-              imagePath: 'assets/images/image.jpg',
-              title: 'Flutter Demo Card',
-              subtitle: 'by Zubair Rehman',
-              body:
-                  'Visit ten places on our planet that are undergoing the biggest changes today.',
-              flatButtons: [
-                FlatButton(
-                  child: Text(
-                    'First Button',
-                    style: Theme.of(context)
-                        .textTheme
-                        .button
-                        .copyWith(color: Colors.blueAccent),
-                  ),
-                  onPressed: () {},
+          color: Colors.grey[200],
+          child: GenericCard(
+            imagePath: 'assets/images/image.jpg',
+            title: 'Flutter Demo Card',
+            subtitle: 'by Zubair Rehman',
+            body:
+                'Visit ten places on our planet that are undergoing the biggest changes today.',
+            flatButtons: [
+              FlatButton(
+                child: Text(
+                  'First Button',
+                  style: Theme.of(context)
+                      .textTheme
+                      .button
+                      .copyWith(color: Colors.blueAccent),
                 ),
-                FlatButton(
-                  child: Text(
-                    'Second Button',
-                    style: Theme.of(context)
-                        .textTheme
-                        .button
-                        .copyWith(color: Colors.blueAccent),
-                  ),
-                  onPressed: () {},
+                onPressed: () {},
+              ),
+              FlatButton(
+                child: Text(
+                  'Second Button',
+                  style: Theme.of(context)
+                      .textTheme
+                      .button
+                      .copyWith(color: Colors.blueAccent),
                 ),
-              ],
-              iconButtons: [
-                IconButton(
-                  icon: Icon(Icons.assignment),
-                  color: Colors.grey[500],
-                  iconSize: 24.0,
-                  onPressed: () {},
-                ),
-                IconButton(
-                  icon: Icon(Icons.email),
-                  color: Colors.grey[500],
-                  iconSize: 24.0,
-                  onPressed: () {},
-                ),
-                IconButton(
-                  icon: Icon(Icons.more_vert),
-                  color: Colors.grey[500],
-                  iconSize: 24.0,
-                  onPressed: () {},
-                ),
-              ],
-            )),
+                onPressed: () {},
+              ),
+            ],
+            iconButtons: [
+              IconButton(
+                icon: Icon(Icons.assignment),
+                color: Colors.grey[500],
+                iconSize: 24.0,
+                onPressed: () {},
+              ),
+              IconButton(
+                icon: Icon(Icons.email),
+                color: Colors.grey[500],
+                iconSize: 24.0,
+                onPressed: () {},
+              ),
+              IconButton(
+                icon: Icon(Icons.more_vert),
+                color: Colors.grey[500],
+                iconSize: 24.0,
+                onPressed: () {},
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }

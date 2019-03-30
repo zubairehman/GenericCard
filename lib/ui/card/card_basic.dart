@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage(
+class GenericCard extends StatefulWidget {
+  GenericCard(
       {Key key,
       this.title,
       this.subtitle,
@@ -22,10 +22,10 @@ class MyHomePage extends StatefulWidget {
   final List<IconButton> iconButtons;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _GenericCardState createState() => _GenericCardState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _GenericCardState extends State<GenericCard> {
   @override
   Widget build(BuildContext context) {
     return Center(
